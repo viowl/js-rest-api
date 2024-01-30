@@ -1,7 +1,4 @@
-console.log('Hi Filiph')
-
-const list = document.querySelector("todo-list");
-
+const list = document.querySelector(".todo-list");
 
 
 const getTodos = () => {
@@ -30,3 +27,4 @@ const renderTodos = (todos) => {
 getTodos()
     .then(renderTodos)
     .catch(showDefaultError);
+
