@@ -9,7 +9,7 @@ const searchForm = document.querySelector(".search-form");
 
 searchForm.addEventListener("submit", (event) => {
   event.preventDefault();
-
+  
   const query = event.currentTarget.elements.query.value;
 
   if (query.length < 3) {
@@ -30,8 +30,6 @@ const getPokemon = (query = "") => {
       }
     });
 }
-
-
 
 
 const getPokemonHTML = ({sprites, name, weight, height, abilities}) => `
